@@ -61,8 +61,8 @@
   };
 
   var _Window_BattleLog_displayAction = 
-   Window_BattleLog.prototype.displayAction;
-  Window_BattleLog.prototype.displayAction = function(subject, item) {
+    Window_BattleLog.prototype.displayAction;
+    Window_BattleLog.prototype.displayAction = function(subject, item) {
     if($gameSystem.isSideView()){
       if(displayAttack ||
        !(DataManager.isSkill(item) && item.id == subject.attackSkillId())) {
